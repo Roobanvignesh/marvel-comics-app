@@ -126,7 +126,7 @@
 
 .contact-left h2 {
   font-family: "Bangers", cursive;
-  color: #e62429;
+  color: #C8102E;
   margin-bottom: 20px;
   font-size: 2rem;
 }
@@ -156,7 +156,7 @@
 }
 
 .contact-form button {
-  background: #e62429;
+  background: #C8102E;
   color: #fff;
   padding: 12px 25px;
   border: none;
@@ -168,7 +168,7 @@
 
 .contact-form button:hover {
   background: #ffcc00;
-  color: #e62429;
+  color: #C8102E;
 }
 
 .contact-right img {

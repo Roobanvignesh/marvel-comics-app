@@ -31,7 +31,7 @@
 
 .login-popup-title h2 {
   font-size: 32px;
-  color: #ff0000;
+  color: #C8102E;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -69,7 +69,7 @@
 }
 
 .login-popup-inputs input:focus {
-  border: 2px solid #ff0000;
+  border: 2px solid #C8102E;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
 
@@ -78,7 +78,7 @@
   padding: 12px 15px;
   border-radius: 8px;
   border: none;
-  background-color: #ff0000;
+  background-color: #C8102E;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -118,7 +118,7 @@
 }
 
 .login-popup-container p span:hover {
-  color: #ff0000;
+  color: #C8102E;
 }
 
 @media (max-width: 420px) {

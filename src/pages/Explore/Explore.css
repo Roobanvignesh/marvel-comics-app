@@ -9,7 +9,7 @@
   font-weight: 900;
   margin-bottom: 20px;
   text-align: center;
-  color: red;
+  color: #C8102E;
   text-shadow: 1px 1px #ffff00;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -69,7 +69,7 @@
 }
 
 .all-pill {
-  background: red;
+  background: #C8102E;
   color: #fff;
 }
 
@@ -108,7 +108,7 @@
 
 .comic-card:hover {
   transform: translateY(-8px) scale(1);
-  box-shadow: 0 5px 10px red, 5px 0 10px yellow;
+  box-shadow: 0 5px 10px #C8102E, 5px 0 10px yellow;
 }
 
 .card-image {

@@ -34,11 +34,11 @@
 }
 
 .nav-menu ul li button:hover {
-  color: rgb(229, 38, 38);
+  color: #ED1D24;
 }
 
 .nav-menu ul li button.active {
-  color: rgb(229, 38, 38);
+  color: #ED1D24;
   font-style: italic;
 }
 
@@ -51,16 +51,16 @@
   padding: 10px 20px;
   cursor: pointer;
   color: black;
-  background-color: #ffeb3b;
+  background-color: #FFD700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: -4px 4px 0 white, 4px -4px 0 rgb(229, 38, 38);
+  box-shadow: -4px 4px 0 white, 4px -4px 0 #ED1D24;
   transition: all 0.2s ease-in-out;
 }
 
 #comic-btn:hover {
   transform: translate(-2px, -2px);
-  box-shadow: -5px 5px 0 white, 5px -5px 0 rgb(229, 38, 38);
+  box-shadow: -5px 5px 0 white, 5px -5px 0 #ED1D24;
 }
 
 #comic-btn-mobile {
