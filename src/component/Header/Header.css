@@ -1,0 +1,168 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 12px 40px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.nav-menu ul li a.active {
+  color: red;
+  font-style: italic;
+}
+
+.nav-menu ul li a:hover {
+  color: red;
+}
+
+#comic-btn, #comic-btn-mobile {
+  position: relative;
+  font-family: "Bangers", cursive;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black;
+  background-color: #ffeb3b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: -4px 4px 0 white, 4px -4px 0 red;
+  transition: all 0.2s ease-in-out;
+}
+
+#comic-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: -5px 5px 0 white, 5px -5px 0 red;
+}
+
+#comic-btn-mobile {
+  display: none;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+  border-radius: 2px;
+}
+
+@media (max-width: 850px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #1e1e1e;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    z-index: 10;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .log-in {
+    display: none;
+  }
+
+  #comic-btn-mobile {
+    display: block;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+    gap: 5px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 16px;
+  }
+
+  #comic-btn, #comic-btn-mobile {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .nav-menu {
+    width: 180px;
+    padding: 12px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    padding: 8px 10px;
+    gap: 5px;
+  }
+
+  .nav-menu {
+    width: 160px;
+    top: 60px;
+    padding: 10px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 14px;
+  }
+
+  #comic-btn-mobile {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+}

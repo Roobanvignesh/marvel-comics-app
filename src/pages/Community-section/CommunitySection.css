@@ -1,0 +1,361 @@
+.section-wrapper {
+  position: relative;
+  background-color: #1e1e1e;
+  padding-bottom: 250px;
+}
+
+.community {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 60px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.community-content {
+  max-width: 500px;
+}
+
+.community-content h1 {
+  font-family: "Bangers", cursive;
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.community-content p {
+  font-family: "Comic Neue", sans-serif;
+  color: #ddd;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.community-image img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* GET IN TOUCH */
+.get-in-touch {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -120px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 900px;
+  width: 90%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.getin-image img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.getin-content h1 {
+  font-family: "Bangers", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.getin-content p {
+  font-family: "Comic Neue", sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.getin-content a {
+  text-decoration: none;
+}
+
+/* CONTACT POPUP */
+.contact-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  padding: 20px;
+}
+
+.contact-card:target {
+  display: flex;
+}
+
+.popup-modern {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 850px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-left {
+  padding: 30px;
+}
+
+.contact-left h2 {
+  font-family: "Bangers", cursive;
+  color: #e62429;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contact-form .input-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  font-family: "Comic Neue", sans-serif;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.contact-form button {
+  background: #e62429;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ffcc00;
+  color: #e62429;
+}
+
+.contact-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 12px 0;
+}
+
+.contact-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding: 5px 12px;
+  background: yellow;
+  box-shadow: -4px 4px 0 white, 4px -4px 0 red;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+
+.contact-close:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE STYLES */
+
+@media screen and (max-width: 1024px) {
+  .community {
+    padding: 60px 40px;
+    gap: 30px;
+  }
+
+  .community-content h1 {
+    font-size: 40px;
+  }
+
+  .community-content p {
+    font-size: 1.1rem;
+  }
+
+  .community-image {
+    display: none;
+  }
+
+  .get-in-touch {
+    flex-direction: column;
+    bottom: -150px;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .getin-content h1 {
+    font-size: 2rem;
+  }
+
+  .getin-content p {
+    font-size: 1rem;
+  }
+
+  .getin-content a {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .popup-modern {
+    flex-direction: column;
+  }
+
+  .contact-right img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .community {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .community-content h1 {
+    font-size: 32px;
+        text-align: center;
+
+  }
+
+  .community-content p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .community-image {
+    display: none;
+  }
+
+  .community-content button {
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+
+  .get-in-touch {
+    bottom: -120px;
+    padding: 25px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .getin-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .getin-content p {
+    font-size: 0.95rem;
+  }
+
+  .getin-content a {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0 0 0;
+    text-align: center;
+  }
+
+  .popup-modern {
+    width: 90%;
+  }
+  .contact-right {
+    display: none;
+  }
+
+  .contact-left h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contact-right img {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .community-content h1 {
+    font-size: 26px;
+  }
+
+  .community-content p {
+    font-size: 0.9rem;
+  }
+
+  .community-image {
+    display: none;
+  }
+
+  .get-in-touch {
+    bottom: -100px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .getin-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .getin-content p {
+    font-size: 0.85rem;
+  }
+
+  .getin-content a {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+
+  .contact-left h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-right img {
+    height: 150px;
+  }
+}

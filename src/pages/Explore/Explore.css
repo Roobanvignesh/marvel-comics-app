@@ -1,0 +1,249 @@
+.explore-container {
+  padding: 32px 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.explore-heading {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+  color: red;
+  text-shadow: 1px 1px #ffff00;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.explore-search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.explore-search input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 16px;
+  border: 2px solid #e62429;
+  border-radius: 15px;
+  font-size: 16px;
+  background: #111;
+  color: #fff;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.explore-search input::placeholder {
+  color: #bbb;
+}
+
+.explore-search input:focus {
+  outline: none;
+  border-color: #f5c518;
+  box-shadow: 0 0 8px rgba(245, 197, 24, 0.6);
+}
+
+.character-scroll {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.all-pill,
+.character-pill,
+.series-pill {
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  letter-spacing: 1.2px;
+  white-space: nowrap;
+}
+
+.all-pill {
+  background: red;
+  color: #fff;
+}
+
+.character-pill {
+  background: #f5c518;
+  color: #000;
+}
+
+.series-pill {
+  background: #000;
+  color: #fff;
+}
+
+.selected {
+  transform: scale(1.1);
+  border: 2px solid #fff;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.comic-card {
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comic-card:hover {
+  transform: translateY(-8px) scale(1);
+  box-shadow: 0 5px 10px red, 5px 0 10px yellow;
+}
+
+.card-image {
+  width: 100%;
+  height: 330px;
+  background: #000;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.comic-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #f5c518;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 13px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.card-characters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.character-chip {
+  background: #e62429;
+  color: #fff;
+  padding: 4px 11px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .explore-heading {
+    font-size: 28px;
+  }
+  .explore-search input {
+    max-width: 400px;
+    font-size: 15px;
+  }
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card-image {
+    height: 280px;
+  }
+  .card-content h3 {
+    font-size: 16px;
+  }
+  .card-content p {
+    display: none;
+  }
+  .character-chip {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .explore-heading {
+    font-size: 24px;
+  }
+  .explore-search input {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .card-image {
+    height: 220px;
+  }
+  .card-content h3 {
+    font-size: 14px;
+  }
+  .card-content p {
+    display: none;
+  }
+  .character-chip {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .explore-heading {
+    font-size: 20px;
+  }
+  .explore-search input {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .card-image {
+    height: 180px;
+  }
+  .card-content h3 {
+    font-size: 13px;
+  }
+  .card-content p {
+    display: none;
+  }
+  .character-chip {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+}

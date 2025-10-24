@@ -1,0 +1,223 @@
+.new-release {
+  background-color: #fff;
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.release-content {
+  margin-bottom: 40px;
+}
+
+.release-content h1 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 3px;
+  font-size: 42px;
+  margin-bottom: 12px;
+  color: #ff4757;
+}
+
+.release-content p {
+  font-size: 15px;
+  color: #444;
+  max-width: 700px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  perspective: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  margin-top: 30px;
+  position: relative;
+  height: 400px;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 220px;
+  height: 330px;
+  margin-left: -110px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  transform-origin: center center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+.release-details {
+  margin-top: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #222;
+  font-family: "Bangers", cursive;
+  letter-spacing: 2px;
+}
+
+.release-details h3 {
+  font-size: 20px;
+  color: #ff4757;
+  margin-bottom: 5px;
+}
+
+.release-details h2 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: #000;
+}
+
+.release-details p {
+  font-size: 18px;
+  color: #555;
+}
+
+.release-details .release-date {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: white;
+  background: red;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.release-details .release-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 95%;
+    perspective: 1000px;
+  }
+  .carousel {
+    height: 300px;
+  }
+  .carousel-card {
+    width: 160px;
+    height: 240px;
+    margin-left: -80px;
+  }
+  .carousel-btn {
+    font-size: 2rem;
+    padding: 10px 15px;
+  }
+  .carousel-btn.left { left: 5px; }
+  .carousel-btn.right { right: 5px; }
+
+  .release-content h1 { font-size: 36px; }
+  .release-content p { font-size: 14px; max-width: 90%; }
+  .release-details h2 { font-size: 28px; }
+  .release-details .release-desc { font-size: 15px; }
+  .release-details .release-date { font-size: 14px; padding: 4px 10px; }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-container {
+    width: 100%;
+    perspective: 800px;
+  }
+  .carousel {
+    height: 220px;
+  }
+  .carousel-card {
+    width: 120px;
+    height: 180px;
+    margin-left: -60px;
+  }
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 6px 10px;
+  }
+  .carousel-btn.left { left: 2px; }
+  .carousel-btn.right { right: 2px; }
+
+  .release-content h1 { font-size: 28px; }
+  .release-content p { font-size: 13px; }
+  .release-details h2 { font-size: 24px; }
+  .release-details .release-desc { font-size: 14px; }
+  .release-details .release-date { font-size: 12px; padding: 3px 8px; }
+}
+
+@media screen and (max-width: 360px) {
+  .carousel-container {
+    width: 100%;
+    perspective: 700px;
+  }
+  .carousel {
+    height: 160px;
+  }
+  .carousel-card {
+    width: 90px;
+    height: 130px;
+    margin-left: -45px;
+  }
+  .carousel-btn {
+    font-size: 1.2rem;
+    padding: 4px 8px;
+  }
+  .carousel-btn.left { left: 1px; }
+  .carousel-btn.right { right: 1px; }
+
+  .release-content h1 { font-size: 24px; }
+  .release-content p { font-size: 12px; }
+  .release-details h2 { font-size: 20px; }
+  .release-details .release-desc { font-size: 12px; }
+  .release-details .release-date { font-size: 11px; padding: 2px 6px; }
+}
