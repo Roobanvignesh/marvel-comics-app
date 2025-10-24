@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import marvelLogo from "../../assets/Marvel_Logo.svg";
+import marvelLogo from "../../../public/assets/Marvel_Logo.svg";
 import './Header.css';
 
 const Header = ({setShowLogin}) => {

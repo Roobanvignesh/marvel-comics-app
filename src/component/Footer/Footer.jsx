@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import marvelLogo from "../../assets/Marvel_Logo.svg";
+import marvelLogo from "../../../public/assets/Marvel_Logo.svg";
 
 const Footer = () => {
   return (

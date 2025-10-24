@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import avengersImg from "../../assets/avengers-secret-wars.jpg";
-import blackPantherImg from "../../assets/black-panther.jpg";
-import ironManImg from "../../assets/ironman-legacy.jpg";
-import doctorStrangeImg from "../../assets/doctor-strange.jpg";
-import moonKnightImg from "../../assets/moonknight.jpg";
+import avengersImg from "../../../public/assets/avengers-secret-wars.jpg";
+import blackPantherImg from "../../../public/assets/black-panther.jpg";
+import ironManImg from "../../../public/assets/ironman-legacy.jpg";
+import doctorStrangeImg from "../../../public/assets/doctor-strange.jpg";
+import moonKnightImg from "../../../public/assets/moonknight.jpg";
 import './NewRelease.css';
 
 const releases = [

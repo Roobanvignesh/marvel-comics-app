@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import heroImg from '../../assets/hero.png';
+import heroImg from '../../../public/assets/hero.png';
 import './Hero.css';
 
-import schoolImg from '../../assets/miles_school.webp';
-import spiderBiteImg from '../../assets/spider-bite.webp';
-import gwenImg from '../../assets/gwen.webp';
-import multiverseImg from '../../assets/multiverse.jpg';
-import villainImg from '../../assets/villan.jpg';
-import milesHero from '../../assets/miles-hero.jpg';
-import marvelBG from '../../assets/marvel-intro.gif';
+import schoolImg from '../../../public/assets/miles_school.webp';
+import spiderBiteImg from '../../../public/assets/spider-bite.webp';
+import gwenImg from '../../../public/assets/gwen.webp';
+import multiverseImg from '../../../public/assets/multiverse.jpg';
+import villainImg from '../../../public/assets/villan.jpg';
+import milesHero from '../../../public/assets/miles-hero.jpg';
+import marvelBG from '../../../public/assets/marvel-intro.gif';
 
 const comicPanels = [
   {

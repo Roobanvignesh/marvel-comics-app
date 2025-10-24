@@ -1,7 +1,7 @@
 import React from "react";
 import "./CommunitySection.css";
-import ironman from "../../assets/ironman.jpg";
-import getInTouchImg from "../../assets/get-in-touch.png";
+import ironman from "../../../public/assets/ironman.jpg";
+import getInTouchImg from "../../../public/assets/get-in-touch.png";
 
 const CommunitySection = () => {
   return (

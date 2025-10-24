@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import crossIcon from "../../assets/cross_icon.jpg";
+import crossIcon from "../../../public/assets/cross_icon.jpg";
 
 const Login = ({setShowLogin}) => {
 
