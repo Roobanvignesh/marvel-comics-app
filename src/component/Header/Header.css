@@ -21,24 +21,29 @@
   flex-wrap: wrap;
 }
 
-.nav-menu ul li a {
-  text-decoration: none;
+.nav-menu ul li button {
+  background: none;
+  border: none;
   color: white;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 1px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
 }
 
-.nav-menu ul li a.active {
+.nav-menu ul li button:hover {
+  color: red;
+}
+
+.nav-menu ul li button.active {
   color: red;
   font-style: italic;
 }
 
-.nav-menu ul li a:hover {
-  color: red;
-}
-
-#comic-btn, #comic-btn-mobile {
+#comic-btn,
+#comic-btn-mobile {
   position: relative;
   font-family: "Bangers", cursive;
   border: none;
@@ -90,7 +95,7 @@
     flex-direction: column;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     z-index: 10;
   }
 
@@ -122,11 +127,12 @@
     gap: 5px;
   }
 
-  .nav-menu ul li a {
+  .nav-menu ul li button {
     font-size: 16px;
   }
 
-  #comic-btn, #comic-btn-mobile {
+  #comic-btn,
+  #comic-btn-mobile {
     font-size: 14px;
     padding: 6px 10px;
   }
@@ -153,7 +159,7 @@
     padding: 10px;
   }
 
-  .nav-menu ul li a {
+  .nav-menu ul li button {
     font-size: 14px;
   }
 

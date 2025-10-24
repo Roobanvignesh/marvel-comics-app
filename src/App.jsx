@@ -7,7 +7,7 @@ import NewRelease from "./pages/New_release/NewRelease.jsx";
 import Home from "./pages/Home/Home.jsx";
 import ComicDetail from "./pages/ComicDetail/ComicDetail.jsx";
 import CommunitySection from "./pages/Community-section/CommunitySection.jsx";
-import Footer from "./component/Footer/Footer.jsx";
+import ScrollToTop from "./component/ScrollToTop/ScrollToTop.jsx";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
@@ -27,7 +27,7 @@ function App() {
           element={<h2 style={{ textAlign: "center" }}>Page Not Found</h2>}
         />
       </Routes>
-      <Footer />
+      <ScrollToTop/>
     </>
   );
 }

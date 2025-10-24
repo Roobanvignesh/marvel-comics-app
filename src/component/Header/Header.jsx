@@ -14,12 +14,69 @@ const Header = ({setShowLogin}) => {
 
       <nav className={`nav-menu ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li><NavLink to="/" end>Home</NavLink></li>
-          <li><NavLink to="/comics">Comics</NavLink></li>
-          <li><NavLink to="/genre">Genre</NavLink></li>
-          <li><NavLink to="/community">Community</NavLink></li>
-          <li><NavLink to="/about">About Us</NavLink></li>
-        </ul>
+  <li>
+    <button
+              className="scroll-link"
+              onClick={() => {
+                const section = document.getElementById("home");
+                section.scrollIntoView({ behavior: "smooth" });
+                setMenuOpen(false);
+              }}
+            >
+              Home
+    </button>
+  </li>
+  <li>
+    <button
+      className="scroll-link"
+      onClick={() => {
+        const section = document.getElementById("new-release");
+        section.scrollIntoView({ behavior: "smooth" });
+        setMenuOpen(false);
+      }}
+    >
+      New Release
+    </button>
+  </li>
+  <li>
+    <button
+      className="scroll-link"
+      onClick={() => {
+        const section = document.getElementById("explore");
+        section.scrollIntoView({ behavior: "smooth" });
+        setMenuOpen(false);
+      }}
+    >
+      Explore Comic
+    </button>
+  </li>
+  <li>
+    <button
+      className="scroll-link"
+      onClick={() => {
+        const section = document.getElementById("community");
+        section.scrollIntoView({ behavior: "smooth" });
+        setMenuOpen(false);
+      }}
+    >
+      Community
+    </button>
+  </li>
+  <li>
+  <button
+    className="scroll-link"
+    onClick={() => {
+      const section = document.getElementById("footer");
+      section.scrollIntoView({ behavior: "smooth" });
+      setMenuOpen(false);
+    }}
+  >
+    Contact
+  </button>
+</li>
+
+</ul>
+
 
         <button id="comic-btn-mobile" onClick={() => setShowLogin(true)}>
           Log in
