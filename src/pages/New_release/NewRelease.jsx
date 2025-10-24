@@ -3,7 +3,7 @@ import avengersImg from "../../assets/avengers-secret-wars.jpg";
 import blackPantherImg from "../../assets/black-panther.jpg";
 import ironManImg from "../../assets/ironman-legacy.jpg";
 import doctorStrangeImg from "../../assets/doctor-strange.jpg";
-import moonKnightImg from "../../assets/moonKnight.jpg";
+import moonKnightImg from "../../assets/moonknight.jpg";
 import './NewRelease.css';
 
 const releases = [
